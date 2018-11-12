@@ -1,7 +1,7 @@
 .main-form__descr {
   @include basic-text--small;
-  width: 100%;
-  margin-bottom: 4px;
+  width: 90%;
+  margin-bottom: 0;
 }
 
 .main-form__container {
@@ -11,7 +11,7 @@
 @media (min-width: $tablet) {
   .main-form__container {
     width: auto;
-    max-width: 100%;
+    max-width: 1149px;
     padding: 0;
     margin: 0 auto;
   }
@@ -21,17 +21,7 @@
     padding-right: 52px;
     font-size: 17px;
     line-height: 30px;
-    width: 80%;
-    margin-bottom: 16px;
-  }
-}
-
-@media (min-width: $desktop) {
-  .main-form__descr {
-    width: 60%;
-    max-width: 700px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding-left: 42px;
+    width: 79%;
+    margin-bottom: 61px;
   }
 }

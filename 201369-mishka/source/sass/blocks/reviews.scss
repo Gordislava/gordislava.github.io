@@ -32,7 +32,7 @@
 }
 
 .reviews__list {
-  width: 100%;
+  width: 95%;
 }
 
 .reviews__text {
@@ -46,7 +46,7 @@
   font-size: 17px;
   line-height: 24px;
   color: $text-dark;
-  font-style: normal;
+  font-style: italic;
 }
 
 .reviews__contacts {
@@ -55,7 +55,7 @@
   line-height: 30px;
   display: block;
   margin-bottom: 30px;
-  font-style: normal;
+  font-style: italic;
 }
 
 .reviews__button-wrapper {
@@ -138,15 +138,14 @@
   .reviews__title {
     @include tablet-title;
     order: 0;
-    padding-top: 77px;
-    margin-left: -5px;
+    padding-top: 80px;
   }
 
   .reviews__write {
-    width: 26%;
+    width: 27%;
     order: 1;
     margin-top: 80px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   .reviews__text {
@@ -205,12 +204,7 @@
 
 @media (min-width: $desktop) {
   .reviews__container {
-    width: auto;
-    max-width: 1150px;
-    box-sizing: border-box;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0 auto;
+    @include container--desktop;
     background-position: 50px 0;
   }
 
@@ -221,14 +215,13 @@
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 70px;
-    margin-left: -4px;
+    padding-top: 74px;
   }
 
   .reviews__write {
     width: 15.5%;
     margin-top: 80px;
-    min-width: 176px;
+    min-width: 180px;
   }
 
   .reviews__contacts {
@@ -246,22 +239,13 @@
   }
 
   .reviews__text {
-    max-width: 770px;
-    margin-bottom: 39px;
-    margin-top: 17px;
-    font-size: 17px;
-  }
-
-  .reviews__autor {
-    font-size: 17px;
-    line-height: 24px;
+    max-width: none;
+    margin-bottom: 37px;
   }
 
   .reviews__container::after {
     background-size: 1050px 21px;
     background-position: center;
-    left: 4.5%;
-    width: 1050px;
     bottom: 85px;
   }
 }

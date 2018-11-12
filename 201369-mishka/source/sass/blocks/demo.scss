@@ -25,13 +25,11 @@
   background-position: 34px 35px;
   top: 0;
   left: 0;
-  font-size: 17px;
-  line-height: 24px;
 }
 
 .demo__text {
   @include basic-text--small;
-  width: 71%;
+  width: 67%;
   margin-bottom: 24px;
   margin-left: 34px;
   margin-top: 25px;
@@ -52,7 +50,7 @@
 .demo__picture::before {
   content: "";
   position: absolute;
-  z-index: 20;
+  z-index: 999;
   background-size: 100px 75px;
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
@@ -92,7 +90,7 @@
 
   .demo__text {
     order: 3;
-    width: 87%;
+    width: 85%;
     font-size: 15px;
     margin-left: 40px;
     background-position: 34px 25px;
@@ -105,7 +103,6 @@
     width: 88%;
     margin-left: 41px;
     margin-bottom: 46px;
-    cursor: pointer;
   }
 
   .demo__list {
@@ -151,15 +148,15 @@
     width: 50%;
     padding-left: 0;
     padding-top: 95px;
-    padding-bottom: 35px;
-    background-position: -5px 40px;
+    padding-bottom: 38px;
+    background-position: 0 39px;
   }
 
   .demo__text {
     margin-top: 0;
     margin-left: 0;
     line-height: 29px;
-    margin-bottom: 49px;
+    margin-bottom: 45px;
   }
 
   .demo__button {

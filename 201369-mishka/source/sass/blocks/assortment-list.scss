@@ -10,14 +10,6 @@
   color: $text-dark;
   padding-bottom: 32px;
   text-decoration: none;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: $desktop) {
@@ -25,16 +17,12 @@
     display: flex;
     width: 42%;
     order: 4;
-    margin-top: 16px;
+    margin-top: 20px;
     position: relative;
     z-index: 10;
   }
 
   .assortment-list__item {
     margin-right: 60px;
-  }
-
-  .assortment-list__link {
-    padding-bottom: 33px;
   }
 }

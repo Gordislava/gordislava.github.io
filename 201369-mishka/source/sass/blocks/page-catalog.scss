@@ -14,12 +14,7 @@
 
 @media (min-width: $desktop) {
   .page-catalog {
-    width: auto;
-    max-width: 1150px;
-    box-sizing: border-box;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0 auto;
+    @include container--desktop;
   }
 
   .page-catalog__list {

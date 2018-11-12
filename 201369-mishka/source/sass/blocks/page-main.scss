@@ -28,16 +28,12 @@
 
 @media (min-width: $tablet) {
   .page-main {
-    margin-top: -45px;
+    margin-top: -50px;
   }
 
   .page-main__header {
     max-width: 1149px;
     margin-bottom: 68px;
-  }
-
-  .page-main__header--form {
-    margin-bottom: 61px;
   }
 
   .page-main__main-title {
@@ -65,28 +61,16 @@
     margin-top: -80px;
   }
 
-  .page-main--form {
-    margin-top: -75px;
-  }
-
   .page-main__header {
     max-width: 100%;
-    margin-bottom: 119px;
-  }
-
-  .page-main__header--form {
-    margin-bottom: 113px;
+    margin-bottom: 123px;
   }
 
   .page-main__main-title {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 98px;
-    padding-bottom: 111px;
-  }
-
-  .page-main__main-title--form {
-    padding-top: 93px;
+    padding-top: 100px;
+    padding-bottom: 106px;
   }
 
   .page-main__header::after {

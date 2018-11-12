@@ -1,6 +1,6 @@
 .social__list {
   @include list-norm;
-  padding-top: 31px;
+  padding-top: 27px;
   padding-bottom: 21px;
   display: flex;
   width: 55%;
@@ -21,20 +21,11 @@
     padding: 0;
     width: 43%;
     margin: 0 auto;
-    padding-top: 0;
-    padding-bottom: 5px;
-    align-items: baseline;
   }
 }
 
 @media (min-width: $desktop) {
   .social__list {
     width: 20%;
-    padding-top: 0;
-    padding-left: 12px;
-  }
-
-  .social__list--form {
-    padding-top: 2px;
   }
 }

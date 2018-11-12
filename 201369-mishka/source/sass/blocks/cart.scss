@@ -40,7 +40,7 @@
 @media (min-width: $tablet) {
   .cart {
     border-bottom: none;
-    padding-left: 83px;
+    padding-left: 92px;
     padding-bottom: 20px;
     padding-top: 31px;
   }
@@ -51,12 +51,12 @@
 
   .cart__icon {
     top: 5px;
-    left: -52px;
+    left: -61px;
   }
 }
 
 @media (min-width: $desktop) {
-  .cart__icon {
-    left: -54px;
+  .cart {
+    padding-left: 95px;
   }
 }
