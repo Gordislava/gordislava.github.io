@@ -1,0 +1,34 @@
+.logo {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 19px;
+}
+
+.logo__catalog {
+  padding-bottom: 15px;
+}
+
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet) {
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 34px;
+    padding-top: 22px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .logo {
+    padding-top: 9px;
+    padding-bottom: 0;
+    padding-right: 7px;
+  }
+}
