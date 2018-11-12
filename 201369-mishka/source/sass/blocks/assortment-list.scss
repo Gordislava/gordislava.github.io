@@ -1,0 +1,40 @@
+.assortment-list {
+  @include list-norm;
+  display: none;
+}
+
+.assortment-list__link {
+  font-size: 15px;
+  line-height: 24px;
+  display: inline-block;
+  color: $text-dark;
+  padding-bottom: 32px;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop) {
+  .assortment-list {
+    display: flex;
+    width: 42%;
+    order: 4;
+    margin-top: 16px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .assortment-list__item {
+    margin-right: 60px;
+  }
+
+  .assortment-list__link {
+    padding-bottom: 33px;
+  }
+}

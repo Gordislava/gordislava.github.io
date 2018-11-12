@@ -1,0 +1,139 @@
+.page-footer {
+  width: 100%;
+  margin-top: 40px;
+  background-color: $bgr-dark;
+}
+
+.page-footer__container {
+  @include container;
+}
+
+.page-footer__social {
+  width: 100%;
+  border-bottom: 1px solid $border-color;
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__copyright {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__copyright path {
+  fill: $icon-light;
+}
+
+.page-footer__copyright:active {
+  opacity: 0.3;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .page-footer__container {
+    @include container--tablet;
+    margin-top: 57px;
+  }
+
+  .page-footer__container--form {
+    margin-top: -3px;
+  }
+
+  .page-footer__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    display: block;
+    padding: 0;
+    padding-top: 51px;
+    padding-bottom: 58px;
+    margin-right: 34px;
+  }
+
+  .page-footer__logo--form {
+    padding-top: 44px;
+  }
+
+  .page-footer__logo-img:hover {
+    fill: $icon-light;
+  }
+
+  .page-footer__logo-img:active {
+    opacity: 0.3;
+  }
+
+  .page-footer__copyright {
+    padding: 0;
+    width: 26%;
+    margin: 0;
+    margin-left: auto;
+    padding-top: 5px;
+  }
+
+  .page-footer__copyright--form {
+    padding-top: 0;
+  }
+
+  .page-footer__social {
+    padding: 0;
+    margin: 0;
+    margin-left: 33px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer {
+    margin-top: 18px;
+  }
+
+  .page-footer__container {
+    width: auto;
+    max-width: 1150px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
+  }
+
+  .page-footer__wrapper {
+    justify-content: space-between;
+    margin-top: 102px;
+  }
+
+  .page-footer__wrapper--form {
+    margin-top: 28px;
+  }
+
+  .page-footer__social,
+  .page-footer__logo,
+  .page-footer__copyright {
+    margin: 0;
+  }
+
+  .page-footer__copyright {
+    padding-top: 17px;
+  }
+
+  .page-footer__copyright--catalog {
+    padding-top: 0;
+  }
+
+  .page-footer__social {
+    margin-left: 65px;
+    padding-top: 0;
+    border: none;
+  }
+
+  .page-footer__logo {
+    padding-top: 51px;
+  }
+}
