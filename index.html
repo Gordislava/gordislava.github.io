@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="all" href="css/animate.min.css">
+    <title>Портфолио</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__container">
+        <h1 class="page-header__title">Просто<span class="page-header__title--light">портфолио</span>
+        </h1>
+        <p class="page-header__descr">Начинающий верстальщик с интересами в области frontend</p>
+        <a class="button page-header__button"href="#portfolio">Сразу к проектам!</a>
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <div class="about__wrapper">
+          <h2 class="about__title">О себе</h2>
+          <p class="about__text">Меня зовут Ярослава, живу в Минске и сейчас я в активном поиске вакантных позиций верстальщика на постоянную или проектную работу. Отлично справляюсь с самоорганизацией как в условиях офиса, так и при удаленной работе, соблюдаю дедлайны и не пропадаю без вести, когда сроки поджимают.</p>
+        </div>
+      </section>
+      <section class="skills">
+        <h2 class="skills__title">
+          Основные навыки
+        </h2>
+        <ul class="skills__list">
+          <li class="skills__item skills__item--sass knowledge-item fadeInUp wow">
+            </svg>
+            <h3 class="knowledge-item__title">
+              Sass/Gulp
+            </h3>
+            <p class="knowledge-item__descr">
+              Использую препроцессор Sass, предпочитаю синтксис SCSS, при необходимости без проблем перехожу на LESS. Для автоматизации и сборки использую Gulp.
+            </p>
+          </li>
+          <li class="skills__item skills__item--html knowledge-item fadeInUp wow"data-wow-delay="500ms">
+            <h3 class="knowledge-item__title">
+              HTML5/CSS3/JS
+            </h3>
+            <p class="knowledge-item__descr">
+              Использую методологию БЭМ для организации разметки, верстаю семантично и валидно, слежу за кроссбраузерностью во всех современных браузерах.
+            </p>
+          </li>
+          <li class="skills__item skills__item--adaptive knowledge-item fadeInUp wow" data-wow-delay="1000ms">
+            <h3 class="knowledge-item__title">
+              Adaptive
+            </h3>
+            <p class="knowledge-item__descr">
+              Верстаю адаптивно на флексах. Работаю и с фиксом, и с резиной. При необходимости провожу оптимиацию загруки (предзагрузка шрифтов, работа с изображениями)
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="porfolio" id="portfolio">
+        <div class="portfolio__header">
+          <h2 class="portfolio__header-text">
+            Некоторые проекты
+          </h2>
+          <a href="#portfolio__list" class="portfolio__link-down"></a>
+        </div>
+        <ul class="portfolio__list" id="portfolio__list">
+          <li class="portfolio__item project-item fadeInDown wow">
+            <a href="https://gordislava.github.io/201369-mishka/" class="project-item__link project-item__link--img">
+              <img src="img/mishka.jpg" alt="" class="project-item__img">
+            </a>
+            <div class="project-item__text">
+              <a href="https://gordislava.github.io/201369-mishka/" class="project-item__link project-item__link--title">
+                <h3 class="project-item__title">Учебный проект "Мишка"</h3>
+              </a>
+              <p class="project-item__descr">Адаптивная вёрстка, БЭМ, сборка на Gulp. Главная, каталог, форма + модальное окно с выбором размера.</p>
+            </div>
+          </li>
+          <li class="portfolio__item project-item fadeInDown wow">
+            <a href="https://gordislava.github.io/Kamako/" class="project-item__link project-item__link--img">
+              <img src="img/kamako.png" alt="" class="project-item__img">
+            </a>
+            <div class="project-item__text">
+              <a href="https://gordislava.github.io/Kamako/" class="project-item__link project-item__link--title">
+                <h3 class="project-item__title"> "Камако" - тестовое задание</h3>
+              </a>
+              <p class="project-item__descr">HTML5, CSS3, flexbox, слайдер Pepermint. Верстка на чистом CSS, подключение адаптивного слайдера.</p>
+            </div>
+          </li>
+          <li class="portfolio__item project-item fadeInDown wow">
+            <a href="https://gordislava.github.io/201369-technomart/" class="project-item__link project-item__link--img">
+              <img src="img/technomart.jpg" alt="" class="project-item__img">
+            </a>
+            <div class="project-item__text">
+              <a href="https://gordislava.github.io/201369-technomart/" class="project-item__link project-item__link--title">
+                <h3 class="project-item__title">Учебный проект "Техномарт"</h3>
+              </a>
+              <p class="project-item__descr">Аккуратная валидная верстка главной, каталога и модалього окна. Слайдер, модальное окно и табы на нативном JS.</p>
+            </div>
+          </li>
+          <li class="portfolio__item project-item fadeInDown wow">
+            <a href="https://gordislava.github.io/Nursery/" class="project-item__link project-item__link--img">
+              <img src="img/nursery.png" alt="" class="project-item__img">
+            </a>
+            <div class="project-item__text">
+              <a href="https://gordislava.github.io/Nursery/" class="project-item__link project-item__link--title" data-wow-delay="1500ms">
+                <h3 class="project-item__title">Nursery Supply Co.</h3>
+              </a>
+              <p class="project-item__descr">Адаптивная резиновая верстка. Sass, Gulp, разметка по методологии БЭМ, оптимизация кода и картинок.</p>
+            </div>
+          </li>
+          <li class="portfolio__item project-item fadeInDown wow" data-wow-delay="1500ms">
+            <a href="https://gordislava.github.io/AnimalShelter/" class="project-item__link project-item__link--img">
+              <img src="img/shelter.png" alt="" class="project-item__img">
+            </a>
+            <div class="project-item__text">
+              <a href="https://gordislava.github.io/AnimalShelter/" class="project-item__link project-item__link--title">
+                <h3 class="project-item__title">Приют для животных</h3>
+              </a>
+              <p class="project-item__descr">Аккуратный макет сайта приюта для животных: главная и каталог питомцев. Простая семантичная верстка на флексах.</p>
+            </div>
+          </li>
+          <li class="portfolio__item project-item fadeInDown wow" data-wow-delay="1500ms">
+            <a href="https://gordislava.github.io/Switch/" class="project-item__link project-item__link--img">
+              <img src="img/switch.png" alt="" class="project-item__img">
+            </a>
+            <div class="project-item__text">
+              <a href="https://gordislava.github.io/Switch/" class="project-item__link project-item__link--title">
+                <h3 class="project-item__title">Лендинг-портфолио креативного агентства</h3>
+              </a>
+              <p class="project-item__descr">Типичный лендинг, разбитый на отдельные смысловые блоки. Валидная семантичная разметка.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">
+            Контакты
+          </h2>
+          <ul class="contacts__list">
+            <li class="contacts__item info">
+              <h3 class="info__title info__title--phone">Телефон</h3>
+              <a class="info__text" href="tel:+375292710044">+375 29 271 00 44</a>
+            </li>
+            <li class="contacts__item info">
+              <h3 class="info__title info__title-email">Email</h3>
+              <a class="info__text" href="mailto:gordislava@gmail.com">gordislava@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <p class="page-footer__text">Designed by Peter Finlan</p>
+        </div>
+      </footer>
+    </main>
+    <script src="js/wow.js"></script>
+    <script>new WOW().init();</script>
+  </body>
+</html>

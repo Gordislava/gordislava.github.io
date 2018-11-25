@@ -45,12 +45,12 @@ a {
   font-weight: bold;
   font-family: "ArialMT";
   font-style: normal;
-  src: url("../../fonts/ArialMT.woff") format("woff");
+  src: url("../fonts/ArialMT.woff") format("woff");
   font-display: swap; }
 
 .page-header {
   width: auto;
-  background-image: url("../../img/background-header.jpg");
+  background-image: url("../img/background-header.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -335,7 +335,7 @@ a {
 
 .about {
   width: auto;
-  background-image: url(../../img/background-bottom.jpg);
+  background-image: url(../img/background-bottom.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
