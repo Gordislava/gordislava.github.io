@@ -17,35 +17,35 @@ a {
   font-weight: normal;
   font-family: "HelveticaMedium";
   font-style: normal;
-  src: url("../fonts/HelveticaNeueCyr-Medium.otf") format("opentype");
+  src: url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff");
   font-display: swap; }
 
 @font-face {
   font-weight: 900;
   font-family: "HelveticaBlack";
   font-style: normal;
-  src: url("../fonts/HelveticaNeueCyr-Black.otf") format("opentype");
+  src: url("../fonts/HelveticaNeueCyr-Black.woff") format("woff");
   font-display: swap; }
 
 @font-face {
   font-weight: 300;
   font-family: "HelveticaLight";
   font-style: normal;
-  src: url("../fonts/HelveticaNeueCyr-Light.otf") format("opentype");
+  src: url("../fonts/HelveticaNeueCyr-Light.woff") format("woff");
   font-display: swap; }
 
 @font-face {
   font-weight: bold;
   font-family: "HelveticaBold";
   font-style: normal;
-  src: url("../fonts/HelveticaNeueCyr-bold.otf") format("opentype");
+  src: url("../fonts/HelveticaNeueCyr-bold.woff") format("woff");
   font-display: swap; }
 
 @font-face {
   font-weight: bold;
   font-family: "ArialMT";
   font-style: normal;
-  src: url("../fonts/ArialMT.woff") format("woff");
+  src: url("../../fonts/ArialMT.woff") format("woff");
   font-display: swap; }
 
 .page-header {
@@ -169,6 +169,18 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.toggle {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/hamb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  display: none; }
+
 @media (max-width: 1230px) {
   .main-nav {
     width: 80%; } }
@@ -181,7 +193,11 @@ a {
   .main-nav {
     width: 100%; }
   .main-nav__list {
-    margin-top: 18px; } }
+    margin-top: 18px;
+    display: none; }
+  .toggle {
+    display: block;
+    cursor: pointer; } }
 
 .menu__item {
   font-family: "Nimbus", "Arial", sans-serif;
@@ -214,7 +230,9 @@ a {
     text-align: center;
     border-bottom: 1px solid #48890a;
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .menu__item--light {
+    background-color: #48890a; } }
 
 .header-text {
   width: 75%;
@@ -335,7 +353,7 @@ a {
 
 .about {
   width: auto;
-  background-image: url(../img/background-bottom.jpg);
+  background-image: url("../img/background-bottom.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
