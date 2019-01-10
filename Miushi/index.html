@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <title>"Миюши: суши и роллы"</title>
+  </head>
+  <body>
+    <svg style="display:none">
+      <symbol viewBox="0 0 23 23" id="icon-cart">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 459.529 459.529" width="23" height="23"><g fill="#91DC5A"><path d="M17 55.231h48.733l69.417 251.033c1.983 7.367 8.783 12.467 16.433 12.467h213.35c6.8 0 12.75-3.967 15.583-10.2l77.633-178.5c2.267-5.383 1.7-11.333-1.417-16.15-3.117-4.817-8.5-7.65-14.167-7.65H206.833c-9.35 0-17 7.65-17 17s7.65 17 17 17H416.5l-62.9 144.5H164.333L94.917 33.698c-1.983-7.367-8.783-12.467-16.433-12.467H17c-9.35 0-17 7.65-17 17s7.65 17 17 17zM135.433 438.298c21.25 0 38.533-17.283 38.533-38.533s-17.283-38.533-38.533-38.533S96.9 378.514 96.9 399.764s17.283 38.534 38.533 38.534zM376.267 438.298h2.833c10.2-.85 19.55-5.383 26.35-13.317 6.8-7.65 9.917-17.567 9.35-28.05-1.417-20.967-19.833-37.117-41.083-35.7-21.25 1.417-37.117 20.117-35.7 41.083 1.416 20.117 18.133 35.984 38.25 35.984z"/></g></svg>
+      </symbol>
+      <symbol viewBox="0 0 23 23" id="icon-user">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="23" height="23"><path d="M55.014 45.389l-9.553-4.776A2.63 2.63 0 0 1 44 38.248v-3.381c.229-.28.47-.599.719-.951a22.886 22.886 0 0 0 2.954-5.799A3.968 3.968 0 0 0 50 24.5v-4c0-.963-.36-1.896-1-2.625v-5.319c.056-.55.276-3.824-2.092-6.525C44.854 3.688 41.521 2.5 37 2.5s-7.854 1.188-9.908 3.53c-1.435 1.637-1.918 3.481-2.064 4.805C23.314 9.949 21.294 9.5 19 9.5c-10.389 0-10.994 8.855-11 9v4.579c-.648.706-1 1.521-1 2.33v3.454c0 1.079.483 2.085 1.311 2.765.825 3.11 2.854 5.46 3.644 6.285v2.743c0 .787-.428 1.509-1.171 1.915l-6.653 4.173A7.924 7.924 0 0 0 0 53.703V57.5h60v-4.043a8.973 8.973 0 0 0-4.986-8.068zM14 53.262V55.5H2v-1.797c0-2.17 1.184-4.164 3.141-5.233l6.652-4.173a4.143 4.143 0 0 0 2.161-3.641v-3.591l-.318-.297c-.026-.024-2.683-2.534-3.468-5.955l-.091-.396-.342-.22A1.59 1.59 0 0 1 9 28.863v-3.454c0-.36.245-.788.671-1.174l.329-.297-.002-5.38c.018-.287.539-7.058 9.002-7.058 2.393 0 4.408.553 6 1.644v4.731c-.64.729-1 1.662-1 2.625v4c0 .304.035.603.101.893.027.116.081.222.118.334.055.168.099.341.176.5l.003.005c.256.528.629 1 1.099 1.377l.016.054c.06.229.123.457.191.68l.081.261c.014.046.031.093.046.139.035.108.069.215.105.321.06.175.123.356.196.553.031.082.065.156.097.237.082.209.164.411.25.611.021.048.039.1.06.147l.056.126c.026.058.053.11.079.167.098.214.194.421.294.621l.047.099c.063.125.126.243.189.363a21.809 21.809 0 0 0 .888 1.539l.085.135c.242.375.452.679.626.916l.125.17.071.097v3.309c0 .968-.528 1.856-1.377 2.32l-2.646 1.443-.461-.041-.188.395-5.626 3.069A9.021 9.021 0 0 0 14 53.262zM58 55.5H16v-2.238a7.016 7.016 0 0 1 3.659-6.164l8.921-4.866A4.644 4.644 0 0 0 31 38.155v-4.019l-.194-.232-.038-.045c-.002-.003-.064-.078-.165-.21a9.504 9.504 0 0 1-.205-.275l-.003-.005a18.167 18.167 0 0 1-.544-.8l-.014-.022c-.098-.153-.202-.32-.308-.497l-.024-.04a20.468 20.468 0 0 1-.705-1.283l-.001-.002a20.237 20.237 0 0 1-.378-.802l-.052-.116c-.055-.125-.11-.256-.166-.391l-.06-.15c-.052-.131-.105-.263-.161-.414a16.51 16.51 0 0 1-.29-.849l-.055-.178-.019-.061a15.65 15.65 0 0 1-.26-.971l-.091-.396-.341-.22A1.994 1.994 0 0 1 26 24.5v-4c0-.561.238-1.084.67-1.475l.33-.297v-6.582l-.027-.021c-.034-.722.009-2.935 1.623-4.776C30.253 5.458 33.081 4.5 37 4.5c3.905 0 6.727.951 8.386 2.828 1.947 2.201 1.625 5.017 1.623 5.041L47 18.728l.33.298c.432.39.67.913.67 1.474v4c0 .873-.572 1.637-1.422 1.899l-.498.153-.16.495a20.934 20.934 0 0 1-2.834 5.713c-.297.421-.586.794-.837 1.079l-.249.284v4.125c0 1.77.983 3.361 2.566 4.153l9.553 4.776A6.982 6.982 0 0 1 58 53.457V55.5z" fill="#91DC5A"/></svg>
+      </symbol>
+      <symbol viewBox="0 0 20 20" id="icon-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.971 47.971"><path d="M28.228 23.986L47.092 5.122a2.998 2.998 0 0 0 0-4.242 2.998 2.998 0 0 0-4.242 0L23.986 19.744 5.121.88a2.998 2.998 0 0 0-4.242 0 2.998 2.998 0 0 0 0 4.242l18.865 18.864L.879 42.85a2.998 2.998 0 1 0 4.242 4.241l18.865-18.864L42.85 47.091c.586.586 1.354.879 2.121.879s1.535-.293 2.121-.879a2.998 2.998 0 0 0 0-4.242L28.228 23.986z"/></svg>
+      </symbol>
+    </svg>
+    <header class="page-header">
+      <div class="page-header__top">
+          <button class="page-header__hamb" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+
+ 
+            <picture>
+              <source media="(max-width: 425px)" srcset="img/logo-mobile.png" width="55" height="52">
+              <img src="img/logo.png" alt="Суши Миюши" class="logo">
+            </picture>
+
+        
+        <ul class="contacts">
+          <li class="contacts__item contacts__item--address"> г. Курск, ул. Ленина, д. 3</li>
+          <li class="contacts__item contacts__item--email">
+            <a class="page-header__link contacts__link" href="mailto: 78003332222@yandex.ru">
+              78003332222@yandex.ru
+            </a>
+          </li>
+        </ul>
+        <div class="page-header__phone">
+          <p class="page-header__phone-number">
+            <a class="page-header__link" href="tel:+78003332222">
+              +7 (800) 333 2 222
+            </a>
+          </p>
+          <p class="page-header__work-time">Работаем с 11.00 до 23.00</p>
+        </div>
+        <button class="button page-header__button">Обратный звонок</button>
+      </div>
+      <div class="page-header__bottom">
+        <nav class="main-nav">
+          <div class="select-menu">Меню</div>
+          <ul class="site-nav">
+            <li class="site-nav__list">
+              <a class="site-nav__link" href="#">Акции и скидки</a>
+            </li>
+            <li class="site-nav__list">
+              <a class="site-nav__link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="site-nav__list">
+              <a class="site-nav__link" href="#">Новости</a>
+            </li>
+            <li class="site-nav__list">
+              <a class="site-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="user-nav">
+            <li class="user-nav__list">
+              <a href="" class="user-nav__link user-nav__link--cabinet">
+                  <svg class="user-nav__icon user-nav__icon--user" width="23" height="23"><use xlink:href="#icon-user"></use></svg>
+                <span>Кабинет</span>
+                
+              </a>
+            </li>
+            <li class="user-nav__list">
+              <a href="" class="user-nav__link user-nav__link--cart">
+                  <svg class="user-nav__icon user-nav__icon--cart" width="23" height="23"><use xlink:href="#icon-cart"></use></svg>
+                <span>Корзина</span>
+                
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="promo">
+        <div class="promo__slider-js" id="promo-js">
+          <div class="promo__slide">
+              <div class="promo__content">
+                <h2 class="promo__title promo__title--sale">Счастливые часы</h2>
+                <p class="promo__descr">с 11:00 до 16:00 в будние дни</p>
+                <a href="" class="promo__link">Подробнее</a>
+              </div>
+          </div>
+          <div class="promo__slide">
+              <div class="promo__content">
+                <h2 class="promo__title">Скидки для компаний</h2>
+                <p class="promo__descr">Заказывай больше и плати меньше</p>
+                <a href="" class="promo__link">Подробнее</a>
+              </div>
+          </div>
+          <div class="promo__slide">
+              <div class="promo__content">
+                <h2 class="promo__title">Сезонные сеты</h2>
+                <p class="promo__descr">Встречай праздники с нами!</p>
+                <a href="" class="promo__link">Подробнее</a>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="menu">
+        <section class="menu__section menu__section--first">
+          <h2 class="menu__title">Сеты</h2>
+          <div class="menu__slider-js" id="menu-js">
+            <div class="menu__item product">
+                <img class="product__img" src="img/set10.jpg" alt="Большой сет">
+                <div class="product__text-group">
+                  <h3 class="product__title">Сет №10</h3>
+                  <p class="product__descr">72 шт. | 1560 г. | 1700 Kkal</p>
+                    <div class="product__price-group">
+                      <p class="product__price">2 050 <sup>руб</sup></p>
+                      <div class="product__sum-group">
+                        <button class="product__sum product__sum--plus">+</button>
+                        <p>1</p>
+                        <button class="product__sum product__sum--minus">-</button>
+                      </div>
+                    </div>
+                  <button class="product__button">В корзину</button>
+                </div>
+            </div>
+            <div class="menu__item product">
+                <img class="product__img" src="img/set10.jpg" alt="Большой сет">
+                <div class="product__text-group">
+                  <h3 class="product__title">Сет №8</h3>
+                  <p class="product__descr">24 шт. | 960 г. | 800 Kkal</p>
+                    <div class="product__price-group">
+                      <p class="product__price">1 590 <sup>руб</sup></p>
+                      <div class="product__sum-group">
+                        <button class="product__sum product__sum--plus">+</button>
+                        <p>1</p>
+                        <button class="product__sum product__sum--minus">-</button>
+                      </div>
+                    </div>
+                  <button class="product__button">В корзину</button>
+                </div>
+              </div>
+              <div class="menu__item product">
+                  <img class="product__img" src="img/set10.jpg" alt="Большой сет">
+                  <div class="product__text-group">
+                    <h3 class="product__title">Минисет №5</h3>
+                    <p class="product__descr">14 шт. | 450 г. | 400 Kkal</p>
+                      <div class="product__price-group">
+                        <p class="product__price">510 <sup>руб</sup></p>
+                        <div class="product__sum-group">
+                          <button class="product__sum product__sum--plus">+</button>
+                          <p>1</p>
+                          <button class="product__sum product__sum--minus">-</button>
+                        </div>
+                      </div>
+                    <button class="product__button">В корзину</button>
+                  </div>
+                </div>
+                <div class="menu__item product">
+                    <img class="product__img" src="img/set10.jpg" alt="Большой сет">
+                    <div class="product__text-group">
+                      <h3 class="product__title">Сет №6</h3>
+                      <p class="product__descr">16 шт. | 460 г. | 490 Kkal</p>
+                        <div class="product__price-group">
+                          <p class="product__price">400 <sup>руб</sup></p>
+                          <div class="product__sum-group">
+                            <button class="product__sum product__sum--plus">+</button>
+                            <p>1</p>
+                            <button class="product__sum product__sum--minus">-</button>
+                          </div>
+                        </div>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </div>
+                  <div class="menu__item product">
+                    <img class="product__img" src="img/set10.jpg" alt="Большой сет">
+                    <div class="product__text-group">
+                      <h3 class="product__title">Сет №8</h3>
+                      <p class="product__descr">24 шт. | 960 г. | 800 Kkal</p>
+                      <div class="product__price-group">
+                        <p class="product__price">1 590 <sup>руб</sup></p>
+                        <div class="product__sum-group">
+                          <button class="product__sum product__sum--plus">+</button>
+                          <p>1</p>
+                          <button class="product__sum product__sum--minus">-</button>
+                        </div>
+                      </div>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </div>
+          </div>
+        </section>
+        <section class="menu__section menu__section--second">
+            <h2 class="menu__title">Роллы</h2>
+            <div class="menu__slider-js" id="menu-js">
+              <div class="menu__item product">
+                <img class="product__img product__img--roll" src="img/roll1.jpg" alt="Свежие роллы" height="183">
+                <div class="product__text-group">
+                  <h3 class="product__title">Кунсей батакон</h3>
+                  <p class="product__descr">8 шт. | 250 г. | 350 Kkal</p>
+                    <div class="product__price-group">
+                      <p class="product__price">260 <sup>руб</sup></p>
+                      <div class="product__sum-group">
+                        <button class="product__sum product__sum--plus">+</button>
+                        <p>1</p>
+                        <button class="product__sum product__sum--minus">-</button>
+                      </div>
+                    </div>
+                  <button class="product__button">В корзину</button>
+                </div>
+              </div>
+              <div class="menu__item product">
+                  <img class="product__img product__img--roll" src="img/roll2.jpg" alt="Свежие роллы" height="183">
+                  <div class="product__text-group">
+                    <h3 class="product__title">Унаги диру</h3>
+                    <p class="product__descr">8 шт. | 960 г. | 800 Kkal</p>
+                      <div class="product__price-group">
+                        <p class="product__price">280 <sup>руб</sup></p>
+                        <div class="product__sum-group">
+                          <button class="product__sum product__sum--plus">+</button>
+                          <p>1</p>
+                          <button class="product__sum product__sum--minus">-</button>
+                        </div>
+                      </div>
+                    <button class="product__button">В корзину</button>
+                  </div>
+                </div>
+                <div class="menu__item product">
+                    <img class="product__img product__img--roll" src="img/roll3.jpg" alt="Свежие роллы" height="183">
+                    <div class="product__text-group">
+                      <h3 class="product__title">Филадельфия</h3>
+                      <p class="product__descr">8 шт. | 450 г. | 400 Kkal</p>
+                        <div class="product__price-group">
+                          <p class="product__price">280 <sup>руб</sup></p>
+                          <div class="product__sum-group">
+                            <button class="product__sum product__sum--plus">+</button>
+                            <p>1</p>
+                            <button class="product__sum product__sum--minus">-</button>
+                          </div>
+                        </div>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </div>
+                  <div class="menu__item product">
+                      <img class="product__img product__img--roll" src="img/roll4.jpg" alt="Свежие роллы" height="183">
+                      <div class="product__text-group">
+                        <h3 class="product__title">Мексиканский</h3>
+                        <p class="product__descr">8 шт. | 460 г. | 490 Kkal</p>
+                          <div class="product__price-group">
+                            <p class="product__price">290 <sup>руб</sup></p>
+                            <div class="product__sum-group">
+                              <button class="product__sum product__sum--plus">+</button>
+                              <p>1</p>
+                              <button class="product__sum product__sum--minus">-</button>
+                            </div>
+                          </div>
+                        <button class="product__button">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="menu__item product">
+                      <img class="product__img product__img--roll" src="img/roll1.jpg" alt="Свежие роллы" height="183">
+                      <div class="product__text-group">
+                        <h3 class="product__title">Унаги диру</h3>
+                        <p class="product__descr">8 шт. | 960 г. | 800 Kkal</p>
+                        <div class="product__price-group">
+                          <p class="product__price">590 <sup>руб</sup></p>
+                          <div class="product__sum-group">
+                            <button class="product__sum product__sum--plus">+</button>
+                            <p>1</p>
+                            <button class="product__sum product__sum--minus">-</button>
+                          </div>
+                        </div>
+                        <button class="product__button">В корзину</button>
+                      </div>
+                    </div>
+            </div>
+          </section>
+          <section class="menu__section menu__section--third">
+              <h2 class="menu__title">Пицца</h2>
+              <div class="menu__slider-js" id="menu-js">
+                <div class="menu__item product">
+                  <img class="product__img" src="img/pizza1.jpg" alt="Свежие роллы">
+                  <div class="product__text-group">
+                    <h3 class="product__title">Баварская</h3>
+                    <p class="product__descr">33 см. | 250 г. | 350 Kkal</p>
+                      <div class="product__price-group">
+                        <p class="product__price">960 <sup>руб</sup></p>
+                        <div class="product__sum-group">
+                          <button class="product__sum product__sum--plus">+</button>
+                          <p>1</p>
+                          <button class="product__sum product__sum--minus">-</button>
+                        </div>
+                      </div>
+                    <button class="product__button">В корзину</button>
+                  </div>
+                </div>
+                <div class="menu__item product">
+                    <img class="product__img" src="img/pizza2.jpg" alt="Свежие роллы">
+                    <div class="product__text-group">
+                      <h3 class="product__title">Вегетарианская</h3>
+                      <p class="product__descr">33 см. | 1 060 г. | 900 Kkal</p>
+                        <div class="product__price-group">
+                          <p class="product__price">1 400 <sup>руб</sup></p>
+                          <div class="product__sum-group">
+                            <button class="product__sum product__sum--plus">+</button>
+                            <p>1</p>
+                            <button class="product__sum product__sum--minus">-</button>
+                          </div>
+                        </div>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </div>
+                  <div class="menu__item product">
+                      <img class="product__img" src="img/pizza3.jpg" alt="Свежие роллы">
+                      <div class="product__text-group">
+                        <h3 class="product__title">Пепперони</h3>
+                        <p class="product__descr">33 см. | 850 г. | 1 200 Kkal</p>
+                          <div class="product__price-group">
+                            <p class="product__price">1 280 <sup>руб</sup></p>
+                            <div class="product__sum-group">
+                              <button class="product__sum product__sum--plus">+</button>
+                              <p>1</p>
+                              <button class="product__sum product__sum--minus">-</button>
+                            </div>
+                          </div>
+                        <button class="product__button">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="menu__item product">
+                        <img class="product__img" src="img/pizza4.jpg" alt="Свежие роллы">
+                        <div class="product__text-group">
+                          <h3 class="product__title">Классическая</h3>
+                          <p class="product__descr">33 см. | 960 г. | 1 490 Kkal</p>
+                            <div class="product__price-group">
+                              <p class="product__price">990 <sup>руб</sup></p>
+                              <div class="product__sum-group">
+                                <button class="product__sum product__sum--plus">+</button>
+                                <p>1</p>
+                                <button class="product__sum product__sum--minus">-</button>
+                              </div>
+                            </div>
+                          <button class="product__button">В корзину</button>
+                        </div>
+                      </div>
+                      <div class="menu__item product">
+                        <img class="product__img" src="img/pizza2.jpg" alt="Свежие роллы">
+                        <div class="product__text-group">
+                          <h3 class="product__title">Деревенская</h3>
+                          <p class="product__descr">33 см. | 990 г. | 1 300 Kkal</p>
+                          <div class="product__price-group">
+                            <p class="product__price">890 <sup>руб</sup></p>
+                            <div class="product__sum-group">
+                              <button class="product__sum product__sum--plus">+</button>
+                              <p>1</p>
+                              <button class="product__sum product__sum--minus">-</button>
+                            </div>
+                          </div>
+                          <button class="product__button">В корзину</button>
+                        </div>
+                      </div>
+              </div>
+            </section>
+            <section class="menu__section menu__section--fourth">
+                <h2 class="menu__title">WOK</h2>
+                <div class="menu__slider-js" id="menu-js">
+                  <div class="menu__item product">
+                    <img class="product__img" src="img/wok1.jpg" alt="Вкусный Wok">
+                    <div class="product__text-group">
+                      <h3 class="product__title">С говядиной</h3>
+                      <p class="product__descr">400 г. | 1350 Kkal</p>
+                      <select class="product__select" name="extra" id="">
+                        <option value="china">Китайский соус</option>
+                        <option value="karry">Карри</option>
+                        <option value="thai">Тайский соус</option>
+                      </select>
+                      <div class="product__price-group">
+                        <p class="product__price">960 <sup>руб</sup></p>
+                        <div class="product__sum-group">
+                          <button class="product__sum product__sum--plus">+</button>
+                          <p>1</p>
+                          <button class="product__sum product__sum--minus">-</button>
+                        </div>
+                      </div>
+                      <button class="product__button">В корзину</button>
+                    </div>
+                  </div>
+                  <div class="menu__item product">
+                      <img class="product__img" src="img/wok2.jpg" alt="Вкусный Wok">
+                      <div class="product__text-group">
+                        <h3 class="product__title">С курицей</h3>
+                        <p class="product__descr">400 г. | 1350 Kkal</p>
+                        <select class="product__select" name="extra" id="">
+                          <option value="china">Китайский соус</option>
+                          <option value="karry">Карри</option>
+                          <option value="thai">Тайский соус</option>
+                        </select>
+                        <div class="product__price-group">
+                          <p class="product__price">1 400 <sup>руб</sup></p>
+                          <div class="product__sum-group">
+                            <button class="product__sum product__sum--plus">+</button>
+                            <p>1</p>
+                            <button class="product__sum product__sum--minus">-</button>
+                          </div>
+                        </div>
+                        <button class="product__button">В корзину</button>
+                      </div>
+                    </div>
+                    <div class="menu__item product">
+                        <img class="product__img" src="img/wok3.jpg" alt="Вкусный Wok">
+                        <div class="product__text-group">
+                          <h3 class="product__title">С креветками</h3>
+                          <p class="product__descr">400 г. | 1350 Kkal</p>
+                            <div class="product__price-group">
+                              <select class="product__select" name="extra" id="">
+                                <option value="china">Китайский соус</option>
+                                <option value="karry">Карри</option>
+                                <option value="thai">Тайский соус</option>
+                              </select>
+                              <p class="product__price">1 280 <sup>руб</sup></p>
+                              <div class="product__sum-group">
+                                <button class="product__sum product__sum--plus">+</button>
+                                <p>1</p>
+                                <button class="product__sum product__sum--minus">-</button>
+                              </div>
+                            </div>
+                          <button class="product__button">В корзину</button>
+                        </div>
+                      </div>
+                      <div class="menu__item product">
+                        <img class="product__img" src="img/wok2.jpg" alt="Вкусный Wok">
+                        <div class="product__text-group">
+                          <h3 class="product__title">С индейкой</h3>
+                          <p class="product__descr">400 г. | 1350 Kkal</p>
+                          <select class="product__select" name="extra" id="">
+                            <option value="china">Китайский соус</option>
+                            <option value="karry">Карри</option>
+                            <option value="thai">Тайский соус</option>
+                          </select>
+                          <div class="product__price-group">
+                            <p class="product__price">890 <sup>руб</sup></p>
+                            <div class="product__sum-group">
+                              <button class="product__sum product__sum--plus">+</button>
+                              <p>1</p>
+                              <button class="product__sum product__sum--minus">-</button>
+                            </div>
+                          </div>
+                          <button class="product__button">В корзину</button>
+                        </div>
+                      </div>
+                        <div class="menu__item product">
+                          <img class="product__img" src="img/wok2.jpg" alt="Вкусный Wok">
+                          <div class="product__text-group">
+                            <h3 class="product__title">С курицей</h3>
+                            <p class="product__descr">400 г. | 1350 Kkal</p>
+                            <select class="product__select" name="extra" id="">
+                              <option value="china">Китайский соус</option>
+                              <option value="karry">Карри</option>
+                              <option value="thai">Тайский соус</option>
+                            </select>
+                            <div class="product__price-group">
+                              <p class="product__price">890 <sup>руб</sup></p>
+                              <div class="product__sum-group">
+                                <button class="product__sum product__sum--plus">+</button>
+                                <p>1</p>
+                                <button class="product__sum product__sum--minus">-</button>
+                              </div>
+                            </div>
+                            <button class="product__button">В корзину</button>
+                          </div>
+                        </div>
+                </div>
+              </section>
+      </section>
+      <section class="tabs-section">
+          <div class="tabs">
+              <div class="tabs__nav">
+                  <ul class="tabs__list">
+                    <li><a href="#one" class="active">Новинки</a></li>
+                    <li><a href="#two">Акции</a></li>
+                  </ul>
+                </div>
+              <div class="tab__content">
+                  <div class="tab__pane tab__pane--one faded in active" id="one""> 
+                    <div class="menu__slider-js" id="menu-js">
+                      <div class="menu__item product">
+                        <img class="product__img product__img--roll" src="img/roll1.jpg" alt="Свежие роллы" height="183">
+                        <div class="product__text-group">
+                          <h3 class="product__title">Кунсей батакон</h3>
+                          <p class="product__descr">8 шт. | 250 г. | 350 Kkal</p>
+                            <div class="product__price-group">
+                              <p class="product__price">260 <sup>руб</sup></p>
+                              <div class="product__sum-group">
+                                <button class="product__sum product__sum--plus">+</button>
+                                <p>1</p>
+                                <button class="product__sum product__sum--minus">-</button>
+                              </div>
+                            </div>
+                          <button class="product__button">В корзину</button>
+                        </div>
+                      </div>
+                      <div class="menu__item product">
+                          <img class="product__img product__img--roll" src="img/roll2.jpg" alt="Свежие роллы" height="183">
+                          <div class="product__text-group">
+                            <h3 class="product__title">Унаги диру</h3>
+                            <p class="product__descr">8 шт. | 960 г. | 800 Kkal</p>
+                              <div class="product__price-group">
+                                <p class="product__price">280 <sup>руб</sup></p>
+                                <div class="product__sum-group">
+                                  <button class="product__sum product__sum--plus">+</button>
+                                  <p>1</p>
+                                  <button class="product__sum product__sum--minus">-</button>
+                                </div>
+                              </div>
+                            <button class="product__button">В корзину</button>
+                          </div>
+                        </div>
+                        <div class="menu__item product">
+                            <img class="product__img product__img--roll" src="img/roll3.jpg" alt="Свежие роллы" height="183">
+                            <div class="product__text-group">
+                              <h3 class="product__title">Филадельфия</h3>
+                              <p class="product__descr">8 шт. | 450 г. | 400 Kkal</p>
+                                <div class="product__price-group">
+                                  <p class="product__price">280 <sup>руб</sup></p>
+                                  <div class="product__sum-group">
+                                    <button class="product__sum product__sum--plus">+</button>
+                                    <p>1</p>
+                                    <button class="product__sum product__sum--minus">-</button>
+                                  </div>
+                                </div>
+                              <button class="product__button">В корзину</button>
+                            </div>
+                          </div>
+                          <div class="menu__item product">
+                              <img class="product__img product__img--roll" src="img/roll4.jpg" alt="Свежие роллы" height="183">
+                              <div class="product__text-group">
+                                <h3 class="product__title">Мексиканский</h3>
+                                <p class="product__descr">8 шт. | 460 г. | 490 Kkal</p>
+                                  <div class="product__price-group">
+                                    <p class="product__price">290 <sup>руб</sup></p>
+                                    <div class="product__sum-group">
+                                      <button class="product__sum product__sum--plus">+</button>
+                                      <p>1</p>
+                                      <button class="product__sum product__sum--minus">-</button>
+                                    </div>
+                                  </div>
+                                <button class="product__button">В корзину</button>
+                              </div>
+                            </div>
+                            <div class="menu__item product">
+                              <img class="product__img product__img--roll" src="img/roll2.jpg" alt="Свежие роллы" height="183">
+                              <div class="product__text-group">
+                                <h3 class="product__title">Унаги диру</h3>
+                                <p class="product__descr">8 шт. | 960 г. | 800 Kkal</p>
+                                <div class="product__price-group">
+                                  <p class="product__price">590 <sup>руб</sup></p>
+                                  <div class="product__sum-group">
+                                    <button class="product__sum product__sum--plus">+</button>
+                                    <p>1</p>
+                                    <button class="product__sum product__sum--minus">-</button>
+                                  </div>
+                                </div>
+                                <button class="product__button">В корзину</button>
+                              </div>
+                            </div>
+                    </div>
+                  </div>
+                  <div class="tab__pane tab__pane--two faded" id="two">
+                      <div class="menu__slider-js" id="menu-js">
+                          <div class="menu__item product">
+                            <img class="product__img" src="img/pizza1.jpg" alt="Свежие роллы">
+                            <div class="product__text-group">
+                              <h3 class="product__title">Баварская</h3>
+                              <p class="product__descr">33 см. | 250 г. | 350 Kkal</p>
+                                <div class="product__price-group">
+                                  <p class="product__price">960 <sup>руб</sup></p>
+                                  <div class="product__sum-group">
+                                    <button class="product__sum product__sum--plus">+</button>
+                                    <p>1</p>
+                                    <button class="product__sum product__sum--minus">-</button>
+                                  </div>
+                                </div>
+                              <button class="product__button">В корзину</button>
+                            </div>
+                          </div>
+                          <div class="menu__item product">
+                              <img class="product__img" src="img/pizza2.jpg" alt="Свежие роллы">
+                              <div class="product__text-group">
+                                <h3 class="product__title">Вегетарианская</h3>
+                                <p class="product__descr">33 см. | 1 060 г. | 900 Kkal</p>
+                                  <div class="product__price-group">
+                                    <p class="product__price">1 400 <sup>руб</sup></p>
+                                    <div class="product__sum-group">
+                                      <button class="product__sum product__sum--plus">+</button>
+                                      <p>1</p>
+                                      <button class="product__sum product__sum--minus">-</button>
+                                    </div>
+                                  </div>
+                                <button class="product__button">В корзину</button>
+                              </div>
+                            </div>
+                            <div class="menu__item product">
+                                <img class="product__img" src="img/pizza3.jpg" alt="Свежие роллы">
+                                <div class="product__text-group">
+                                  <h3 class="product__title">Пепперони</h3>
+                                  <p class="product__descr">33 см. | 850 г. | 1 200 Kkal</p>
+                                    <div class="product__price-group">
+                                      <p class="product__price">1 280 <sup>руб</sup></p>
+                                      <div class="product__sum-group">
+                                        <button class="product__sum product__sum--plus">+</button>
+                                        <p>1</p>
+                                        <button class="product__sum product__sum--minus">-</button>
+                                      </div>
+                                    </div>
+                                  <button class="product__button">В корзину</button>
+                                </div>
+                              </div>
+                              <div class="menu__item product">
+                                  <img class="product__img" src="img/pizza4.jpg" alt="Свежие роллы">
+                                  <div class="product__text-group">
+                                    <h3 class="product__title">Классическая</h3>
+                                    <p class="product__descr">33 см. | 960 г. | 1 490 Kkal</p>
+                                      <div class="product__price-group">
+                                        <p class="product__price">990 <sup>руб</sup></p>
+                                        <div class="product__sum-group">
+                                          <button class="product__sum product__sum--plus">+</button>
+                                          <p>1</p>
+                                          <button class="product__sum product__sum--minus">-</button>
+                                        </div>
+                                      </div>
+                                    <button class="product__button">В корзину</button>
+                                  </div>
+                                </div>
+                                <div class="menu__item product">
+                                  <img class="product__img" src="img/pizza2.jpg" alt="Свежие роллы">
+                                  <div class="product__text-group">
+                                    <h3 class="product__title">Деревенская</h3>
+                                    <p class="product__descr">33 см. | 1 260 г. | 1 300 Kkal</p>
+                                    <div class="product__price-group">
+                                      <p class="product__price">890 <sup>руб</sup></p>
+                                      <div class="product__sum-group">
+                                        <button class="product__sum product__sum--plus">+</button>
+                                        <p>1</p>
+                                        <button class="product__sum product__sum--minus">-</button>
+                                      </div>
+                                    </div>
+                                    <button class="product__button">В корзину</button>
+                                  </div>
+                                </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="features">
+        <h2 class="features__title">10 причин купить у нас</h2>
+        <ul class="features__list">
+          <li class="features__item features__item--handmade">100% ручная работа</li>
+          <li class="features__item features__item--fresh">100% свежие ингредиенты</li>
+          <li class="features__item features__item--price">Самые низкие цены на рынке! (Нет ресторанной наценки)</li>
+          <li class="features__item features__item--quality">Постоянный контроль качества на всех этапах</li>
+          <li class="features__item features__item--fish">Только охлажденная рыба (никакой заморозки)</li>
+          <li class="features__item features__item--rice">Мы используем только дорогой рис из Японии</li>
+          <li class="features__item features__item--roll">Больше начинки, меньше риса!</li>
+          <li class="features__item features__item--avokado">Мы не заменяем авокадо огурцом!</li>
+          <li class="features__item features__item--italian">Вся пицца готовится из итальянской муки и Итальянского соуса</li>
+          <li class="features__item features__item--mayo">Мы не используем майонез!</li>
+        </ul>
+      </section>
+      <section class="form-section">
+        <div class="form-section__wrapper">
+        <div class="form-section__all">
+            <p class="form-section__text">Есть вопросы?</p>
+            <h2 class="form-section__title">Оставьте свои контакты</h2>
+            <form action="https://echo.htmlacademy.ru" method="POST" class="form">
+              <div class="form__wrapper">
+                <fieldset class="form__field">
+                    <ul class="form__list">
+                      <li class="form__item">
+                          <input required id="name" class="form__input form__input--name" type="text" name="name" placeholder="Имя">
+                      </li>
+                      <li class="form__item">
+                          <input required id="phone" class="form__input form__input--phone" type="tel" name="phone" placeholder="Телефон">
+                      </li>
+                    </ul>
+                </fieldset>
+                <button class="form__button">Отправить</button>
+              </div>
+            </form>
+            <p class="form-section__note">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих персональных данных.</p>
+        </div>
+        </div>
+      </section>
+      <section class="about">
+        <h2 class="about__title">О компании</h2>
+        <h3 class="about__head">Заказ и доставка роллов, пиццы и WOK(Вок)</h3>
+        <div class="about__content">
+          <div class="about__text">
+              <p class="about__p">Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и качественное приготовление блюд.</p>
+              <p class="about__p">С 2013 года мы осуществляем не только доставку на дом, теперь для вас открыт наш уютный небольшой зал. Придя сюда, вы сможете плотно пообедать, насладиться прекрасными напитками, посидеть с друзьями или обзавестись новыми знакомствами.</p>
+              <p class="about__p">Открывая зал, Мы преследовали цель предоставить своим посетителям максимум удобства и комфорта, поэтому, придя сюда в первый раз, вы почувствуете себя как рыба в воде, окунувшись в домашнюю и теплую обстановку!</p>
+              <p class="about__p">Особое внимание мы уделяем организации доставки суши и других блюд, которая осуществляется только по городу. Четкая и слаженная работа курьеров позволяет максимально сократить время от приготовления блюда до его попадания на стол заказчику. Как правило, оно составляет от 20 до 60 минут в зависимости от местонахождения клиента. Операторы службы доставки всегда осведомлены обо всех изменениях времени доставки и предупреждают клиентов заранее, а при возможных серьезных задержках в связи с дорожной ситуацией предложат Вам альтернативу. Мы беремся только за ту работу, которую можем выполнить в срок.</p>
+              <p class="about__p">В меню суши МИЮШИ представлено все многообразие японской кухни. Классические суши, и роллы приготовлены в соответствии с традиционными рецептами. Для любителей нежных и тающих во рту блюд предлагаются роллы с мясом краба, а также для больших любителей копченого угря потрясающий ролл Дракон. Для желающих пробовать что-то новое и необычное – острые ГУНКАНЫ и новинка нашего меню - ИНАРИ, широкий выбор горячих роллов. Большим компаниям будет удобно заказать суши и роллы, объединенные в сеты, включающие сразу несколько видов каждого из этих блюд. Кроме того, меню суши МИЮШИ не ограничено только японской кухней, здесь всегда можно заказать горячие и холодные блюда ЛАПША или РИС WOK с различными мясными и рыбными наполнителями, салаты, горячие закуски и различные напитки.</p>
+          </div>
+          <img src="img/about.jpg" alt="Доставка суши и роллов" class="about__img">
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__top">
+        <ul class="footer__all">
+          <li class="footer__menu-all footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title footer__list-title--menu">
+                <a data-toggle="footer__dropdown">Меню</a>
+              </h4>
+              <ul class="footer__menu-list footer__dropdown-menu">
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Гунканы</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Суши</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Инари</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Супы</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Салаты</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Горячие закуски</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Десерты</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Напитки</a></li>
+                <li class="foter__menu-item"><a class="footer__menu-link" href="#">Дополнительно</a></li>
+              </ul>
+          </li>
+            <li class="footer__list footer__list--first footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title">
+                <a data-toggle="footer__dropdown">Сеты</a>
+              </h4>
+              <ul class="footer__assortment-list footer__assortment-list--first footer__dropdown-menu">
+                <li class="footer__assortment-item">
+                  <a href="#" class="footer__assortment-link">До 500 руб.</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="#" class="footer__assortment-link">До 1000 руб. (для двоих)</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="#" class="footer__assortment-link">До 1500 руб (для двоих - троих)</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="#" class="footer__assortment-link">До 2000 руб (большая кампания)</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="#" class="footer__assortment-link">от 2000 руб (очень большая кампания)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__list footer__list--second footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title footer__list-title--none">
+                <a data-toggle="footer__dropdown">Популярные</a>
+                </h4>
+              <ul class="footer__assortment-list footer__assortment-list--second footer__dropdown-menu">
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">С угрем</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Горячие</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Запеченные</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Суши</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__list footer__list--fourth footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title">
+                <a data-toggle="footer__dropdown">Роллы</a>
+              </h4>
+              <ul class="footer__assortment-list footer__assortment-list--fourth footer__dropdown-menu">
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Традиционные/Классические</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Простые</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Теплые</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Запеченные</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Вегетарианские</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__list footer__list--fifth footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title">
+                <a data-toggle="footer__dropdown">Вок</a>
+              </h4>
+              <ul class="footer__assortment-list footer__assortment-list--fifth footer__dropdown-menu">
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Яичная</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Удон</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Гречневая</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Стеклянная</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Рис</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__list footer__list--fifth footer__dropdown">
+              <input type="checkbox" class="footer__checkbox">
+              <h4 class="footer__list-title">
+                <a data-toggle="footer__dropdown">Пицца</a>
+              </h4>
+              <ul class="footer__assortment-list footer__assortment-list--fifth footer__dropdown-menu">
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Мясная</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Рыбная</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Сырная</a>
+                </li>
+                <li class="footer__assortment-item">
+                  <a href="" class="footer__assortment-link">Вегетарианская</a>
+                </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copyright">МИЮШИ © 2017</p>
+      <p class="footer__data">
+        <a href="#" class="footer__data-link">Соглашение на обработку персональных данных</a>
+      </p>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item social__item--inst">
+            <a href="#" class="social__link social__link--inst">
+              <span class="">Instagram</span>
+            </a>
+          </li>
+          <li class="social__item social__item--vk">
+            <a href="#" class="social__link social__link--vk">
+              <span class="">ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item social__item--fb">
+            <a href="#" class="social__link social__link--fb">
+              <span class="">Facebook</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </footer>
+    <section class="mobile visually-hidden">
+      <div class="mobile__container">
+        <div class="mobile__wrapper">
+          <button class="mobile__close">
+            <span class="visually-hidden">Закрыть</span>
+            <svg class="mobile__close--icon" width="20" height="20">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+              <ul class="mobile__nav">
+                <li class="mobile__list">
+                  <a class="mobile__link" href="#">Меню</a>
+                </li>
+                <li class="mobile__list">
+                  <a class="mobile__link" href="#">Акции и скидки</a>
+                </li>
+                <li class="mobile__list">
+                  <a class="mobile__link" href="#">Доставка и оплата</a>
+                </li>
+                <li class="mobile__list">
+                  <a class="mobile__link" href="#">Новости</a>
+                </li>
+                <li class="mobile__list">
+                  <a class="mobile__link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <div class="mobile__phone">
+                <p class="mobile__phone-number">
+                  <a class="mobile__phone-link" href="tel:+78003332222">
+                    +7 (800) 333 2 222
+                  </a>
+                </p>
+                <p class="mobile__work-time">Работаем с 11.00 до 23.00</p>
+              </div>
+              <button class="button mobile__button">Обратный звонок</button>
+              <ul class="mobile__contacts">
+                <li class="mobile__contacts--address"> г. Курск, ул. Ленина, д. 3</li>
+                <li class="mobile__contacts--email">
+                  <a class="mobile__contacts--link" href="mailto: 78003332222@yandex.ru">
+                    78003332222@yandex.ru
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

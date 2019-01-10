@@ -1,0 +1,227 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 53px;
+    height: 53px;
+    top: 45%;
+    outline: 0;
+    z-index: 2;
+    border: none;
+    border-radius: 50%;
+    font-size: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+.slick-prev {
+    left: 50px;
+    background-image: url("../img/back.svg");
+    background-repeat: no-repeat;
+    background-size: 17px 17px;
+    background-position: center;
+
+    
+}
+
+.slick-next {
+    right: 50px;
+    background-image: url("../img/right-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 17px 17px;
+    background-position: center;
+
+}
+
+
+/* Dots */
+.slick-dots
+{
+    position: absolute;
+    bottom: 65px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    
+    font-size: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border: 2px solid #c2c2c2;
+    border-radius: 50%;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #1fba0a;
+    border-color: #1fba0a;
+}
+
+.slick-dots li.slick-active button:before
+{
+    background-color: #1fba0a;
+    border-color: #1fba0a;
+}
+
+@media (max-width: 769px) {
+    .slick-dots {
+        bottom: 35px;
+    }
+}
+
+.menu__slider-js > .slick-dots
+{
+    position: absolute;
+    bottom: -30px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+
+.menu__slider-js > .slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 8px;
+    height: 8px;
+    margin: 0 10px;
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.menu__slider-js > .slick-dots li button
+{
+    
+    font-size: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    outline: none;
+    background: #c2c2c2;
+    padding: 0;
+}
+.menu__slider-js > .slick-dots li button:hover,
+.menu__slider-js >.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+
+
+.menu__slider-js > .slick-dots li.slick-active button {
+    background-color: #1fba0a;
+    border-color: #1fba0a;
+}
+
+.menu__slider-js > .slick-dots li.slick-active button:before
+{
+    background-color: #1fba0a;
+    border-color: #1fba0a;
+}
+
+.menu__slider-js > .slick-prev,
+.menu__slider-js > .slick-next {
+    position: absolute;
+    width: 26px;
+    height: 19px;
+    top: 103.5%;
+    outline: 0;
+    background-color:rgba(255, 255, 255, 1);
+
+    z-index: 2;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu__slider-js > .slick-prev {
+    left: 38%;
+    background-image: url("../img/right-arrow-menu.png");
+    transform: rotate(180deg);
+    background-repeat: no-repeat;
+    background-size: 26px 19px;
+    background-position: center;
+
+    
+}
+
+.menu__slider-js > .slick-next {
+    right: 38%;
+    background-image: url("../img/right-arrow-menu.png");
+    background-repeat: no-repeat;
+    background-size: 26px 19px;
+    background-position: center;
+
+}
