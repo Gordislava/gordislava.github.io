@@ -26,7 +26,7 @@
 </head>
 
 <body>
-	<div  id="#page">
+	<div id="#page">
 			<header class="page-header" style="background-image: url(img/top-bg-b.jpg)" id="header">
 				<div class="page-header__top-line">
 					<a href="#" class="logo">
@@ -194,13 +194,13 @@
 						</div>
 						<div class="col-lg-7">
 							<div class="fotorama" data-nav='thumbs' data-thumbwidth='110'  data-thumbheight='66' data-thumbborderwidth='4' data-thumbmargin='6' data-width='100%'>
-								<img src="img/photos/small/photo-1.png">
-								<img src="img/photos/small/photo-2.jpg">
-								<img src="img/photos/small/photo-3.jpg">
-								<img src="img/photos/small/photo-4.jpg">
-								<img src="img/photos/small/photo-5.png">
-								<img src="img/photos/small/photo-2.jpg">
-								<img src="img/photos/small/photo-4.jpg">
+								<img src="img/photos/small/photo-1.png" alt="B&Beard">
+								<img src="img/photos/small/photo-2.jpg" alt="B&Beard">
+								<img src="img/photos/small/photo-3.jpg" alt="B&Beard">
+								<img src="img/photos/small/photo-4.jpg" alt="B&Beard">
+								<img src="img/photos/small/photo-5.png" alt="B&Beard">
+								<img src="img/photos/small/photo-2.jpg" alt="B&Beard">
+								<img src="img/photos/small/photo-4.jpg" alt="B&Beard">
 							</div>
 						</div>
 					</div>
@@ -226,7 +226,7 @@
 								<input class="form__input" type="text" name="Имя" placeholder="Ваше имя..." required>
 								<input class="form__input" type="text" name="Телефон" placeholder="Ваш телефон..." required>
 								<select class="form__input form__input--select" name="Услуга">
-									<option disabled selected selected>Выберите услугу...</option>
+									<option disabled selected>Выберите услугу...</option>
 									<option>Стрижка</option>
 									<option>Бритье</option>
 									<option>Королевское бритье</option>
@@ -386,8 +386,10 @@
 						<div class="col-sm-6 col-lg-4">
 							<div class="page-footer__column">
 								<div class="page-footer__map">
-									<script type="text/javascript" charset="utf-8" async
-										src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afef06ad382037200f7a7a99ae814c82012fb4cef65dc0940f292366b2da2e245&amp;width=100%&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
+									<iframe
+										src="https://yandex.ru/map-widget/v1/?um=constructor%3Afef06ad382037200f7a7a99ae814c82012fb4cef65dc0940f292366b2da2e245&amp;source=constructor"
+										width="100%" height="200">
+									</iframe>
 								</div>
 							</div>
 						</div>
@@ -396,8 +398,7 @@
 			</footer>
 		</div>
 	</div>
-
-	<div class="button-top" title="Наверх"/div>
+	<div class="button-top" title="Наверх"></div>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
