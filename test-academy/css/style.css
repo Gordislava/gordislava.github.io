@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    overflow: hidden;
+}
+
+ .clearfix:after {
+    content: "."; /* добавить содержимое: "." */
+    display: block;  /* сделать блоком, т.к. inline не может иметь clear */
+    clear: both;  /* с обеих сторон clear */
+    visibility: hidden; /* сделать невидимым, зачем нам точка внизу? */
+    height: 0;  /* сделать высоту 0, чтобы не занимал место */
+  } 
+
+* {
+    box-sizing: border-box;
+}
+
+.full-block {
+    width: 100%;
+    background-color: #add8e6;
+
+}
+
+.full-block__text {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 0;
+    color: blue;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+.footer .full-block__text {
+    padding: 30px 0;
+}
+
+/* main content styles */
+
+.menu {
+    background-color: #f0e68c;
+    width: 160px;
+    float: left;
+    margin: 0 0 -4000px;
+    padding: 0 0 4000px;
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.menu__list {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.content-section {
+    width: calc(100% - 160px);
+    float: right;
+    padding: 0 20px;
+    padding-bottom: 4000px;
+    margin-bottom: -4000px;
+    
+    background-image: 
+                    linear-gradient(to top, rgba(255,255,255,0.3), rgba(255,255,255,0.3)), 
+                    url("../ball.png");
+    background-repeat: no-repeat, repeat-y;
+    background-position: top right;
+    background-size: auto, 50px auto;
+    
+}
+
+
+
+.content-section__title {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.content-section__img {
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 600px) {
+    .menu {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+    .content-section {
+        float: none;
+        width: 100%;
+    }
+    .content-section__img {
+        width: 100%;
+        float: none;
+    }
+}
