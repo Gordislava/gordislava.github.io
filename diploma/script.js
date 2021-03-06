@@ -84,8 +84,8 @@ let items;
 
 // }
 
-appendItem(data.plants, panel1);
-  appendItem(data.crystals, panel2);
+appendItem(a.plants, panel1);
+  appendItem(a.crystals, panel2);
   items = document.querySelectorAll(".item");
   getOffsetParams();
   for (var i = 0; i < items.length; i++) {
