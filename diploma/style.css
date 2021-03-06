@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+.buttons-field {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.main-field {
+    display: flex;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    height: 700px;
+    position: relative;
+    /* overflow: auto; */
+}
+
+
+
+.work-panel {
+    width: 49%;
+    background-color: #F8EDEB;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.left-panel-wrap {
+    width: 49%;
+    border-radius: 8px;
+    height: 100%;
+    position: relative;
+}
+
+.left-panel {
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    position: absolute;
+    width: 100%;
+
+    /* display: none; */
+
+}
+
+.panel-container {
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+
+    width: 100%;
+    padding: 10px;
+    /* opacity: 0; */
+    z-index: -1;
+
+}
+
+
+.panel-container-1 {
+    background-color: #FEC5BB;
+    border-top-left-radius: 0;
+}
+
+
+.panel-container-2 {
+    background-color: #FEC89A;
+    position: absolute;
+    border-top-left-radius: 0;
+}
+
+.panel-button {
+    width: 70px;
+    height: 90px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    position: absolute;
+    left: -69px;
+    top: 0;
+    outline: none;
+    transform: translateX(20px);
+    opacity: .8;   
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+    border: 1px dotted transparent;
+    
+}
+
+.panel-button:focus {
+    border: 1px dotted #333;
+}
+
+.panel-button:hover {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+.panel-button-1 {
+    background-color: #FEC5BB;
+    background-image: url("succulent-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+
+.panel-button-2 {
+    background-color: #FEC89A;
+    background-image: url("succulent-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    top: 100px;
+}
+
+.item {
+    padding: 10px;
+    touch-action: none;
+}
+
+.active {
+ /* opacity: 1; */
+ z-index: 5;
+}
+
+.panel-button.b-active {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    .main-field {
+        justify-content: center;
+    }
+
+    .work-panel,
+    .left-panel-wrap {
+        width: 40%;
+
+    }
+    .left-panel-wrap {
+        margin-right: 10px;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .main-field {
+        flex-direction: column;
+    }
+
+    .work-panel,
+    .left-panel-wrap {
+        width: 85%;
+        margin-bottom: 20px;
+    }
+
+    .panel-button {
+        width: 30px;
+        height: 40px;
+        left: -29px;
+        transform: translateX(8px);
+    }
+
+}

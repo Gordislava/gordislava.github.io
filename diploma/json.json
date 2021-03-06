@@ -1,0 +1,14 @@
+{
+    "plants":
+        [
+            "succulent-icon.svg",
+            "botanic.svg",
+            "botanic-stone.svg"
+        ],
+    "crystals": 
+        [
+            "crystal1.svg",
+            "crystal2.svg",
+            "crystal3.svg"
+        ]
+}

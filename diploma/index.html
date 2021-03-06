@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main">
+        <div class="buttons-field">
+            <button id="delButton">Удалить</button>
+            <button id="delButton">Сохранить</button>
+        </div>
+        <div class="main-field">
+            <div class="left-panel-wrap">
+                <div class="left-panel left-panel-1">
+                    <button class="panel-button panel-button-1 b-active"></button>
+                    <div class="panel-container panel-container-1 active" ></div>
+                </div>
+                <div class="left-panel left-panel-2" >
+                    <button class="panel-button panel-button-2"></button>
+                    <div class="panel-container panel-container-2"></div>
+                </div>
+            </div>
+            <div class="work-panel">
+                <button id="growButton">Увеличить</button>
+                <button id="shrinkButton">Уменьшить</button>
+                <input type=button onclick='testLoadData()' value='загрузить JSON'>
+                
+
+                
+            </div>
+
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="polyfill.js"></script>
+    <script src="forEach_polyfill.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
